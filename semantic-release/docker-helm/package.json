@@ -1,0 +1,30 @@
+{
+  "name": "@stenic/semantic-release-docker-helm-config",
+  "version": "1.0.0",
+  "description": "semantic-release shareable config for docker + helm.",
+  "main": ".releaserc.json",
+  "files": [
+    ".releaserc.json"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stenic/semantic-release-docker-helm-config.git"
+  },
+  "author": "Dries De Peuter <dries@stenic.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stenic/semantic-release-docker-helm-config/issues"
+  },
+  "homepage": "https://github.com/stenic/semantic-release-docker-helm-config#readme",
+  "dependencies": {
+    "@semantic-release/changelog": "^6.0.0",
+    "@semantic-release/commit-analyzer": "^9.0.1",
+    "@semantic-release/git": "^10.0.0",
+    "@semantic-release/github": "^8.0.1",
+    "@semantic-release/release-notes-generator": "^10.0.2",
+    "semantic-release-helm": "github:NoUseFreak/semantic-release-helm"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "plugins": [
+    ["@semantic-release/commit-analyzer"],
+    ["@semantic-release/release-notes-generator"],
+    ["@semantic-release/changelog", {
+      "changelogTitle": "# Changelog\n\nAll notable changes to this project will be documented in this file. See\n[Conventional Commits](https://conventionalcommits.org) for commit guidelines."
+    }],
+    ["semantic-release-helm", {
+      "chartPath": "./charts/test",
+      "crPublish": true,
+      "crConfigPath": "./.github/ct.yaml"
+    }],
+    ["@semantic-release/git", {
+      "assets": ["CHANGELOG.md", "charts/**"],
+      "message": "chore(release): ${nextRelease.version}\n\n${nextRelease.notes}"
+    }],
+    ["@semantic-release/github"]
+  ],
+  "branches": ["master", "main"]
+}

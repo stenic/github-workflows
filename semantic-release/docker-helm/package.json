@@ -25,6 +25,6 @@
     "@semantic-release/git": "^10.0.0",
     "@semantic-release/github": "^8.0.1",
     "@semantic-release/release-notes-generator": "^10.0.2",
-    "semantic-release-helm": "github:NoUseFreak/semantic-release-helm"
+    "semantic-release-helm": "github:NoUseFreak/semantic-release-helm#v2.2.0-alpha.1"
   }
 }

@@ -83,8 +83,9 @@ jobs:
         uses: cycjimmy/semantic-release-action@v2
         id: semantic
         with:
+          semantic_version: 17.3.0
           extra_plugins: |
-            https://gitpkg.now.sh/stenic/github-workflows/semantic-release/docker-helm?v0.1.0
+            'https://gitpkg.now.sh/stenic/github-workflows/semantic-release/docker-helm?v0.1.0'
             github:NoUseFreak/semantic-release-helm#v2.2.0-alpha.1
           extends: |
             @stenic/semantic-release-docker-helm-config

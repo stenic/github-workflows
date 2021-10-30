@@ -1,4 +1,6 @@
-{
+
+
+module.export = {
   "plugins": [
     ["@semantic-release/commit-analyzer"],
     ["@semantic-release/release-notes-generator"],
@@ -6,9 +8,9 @@
       "changelogTitle": "# Changelog\n\nAll notable changes to this project will be documented in this file. See\n[Conventional Commits](https://conventionalcommits.org) for commit guidelines."
     }],
     ["semantic-release-helm", {
-      "chartPath": "./charts/test",
+      "chartPath": process.env.CHART_PATH,
       "crPublish": true,
-      "crConfigPath": "./.github/ct.yaml"
+      "crConfigPath": process.env.CR_CONFIG_PATH
     }],
     ["@semantic-release/git", {
       "assets": ["CHANGELOG.md", "charts/**"],

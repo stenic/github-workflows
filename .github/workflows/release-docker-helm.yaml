@@ -84,10 +84,9 @@ jobs:
         id: semantic
         with:
           extra_plugins: |
-            'https://gitpkg.now.sh/stenic/github-workflows/semantic-release/docker-helm?v0.1.0'
-            github:NoUseFreak/semantic-release-helm#v2.2.0-alpha.1
+            @stenic/semantic-release-docker-helm-config@1.0.1
           extends: |
-            https://gitpkg.now.sh/stenic/github-workflows/semantic-release/docker-helm?v0.1.0
+            @stenic/semantic-release-docker-helm-config
         env:
           GITHUB_TOKEN: ${{ secrets.token }}
 

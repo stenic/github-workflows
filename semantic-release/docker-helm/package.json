@@ -1,11 +1,10 @@
 {
   "name": "@stenic/semantic-release-docker-helm-config",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "semantic-release shareable config for docker + helm.",
-  "main": ".releaserc.js",
+  "main": "release.config.js",
   "files": [
-    ".releaserc.js",
-    "package.json"
+    "release.config.js"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

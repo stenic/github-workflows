@@ -8,6 +8,13 @@ on:
       docker_image:
         required: true
         type: string
+      chart_path:
+        required: true
+        type: string
+      cr_config_path:
+        required: false
+        default: .github/ct.yaml
+        type: string
       docker_platforms:
         required: false
         default: linux/amd64,linux/arm64
@@ -89,6 +96,8 @@ jobs:
             @stenic/semantic-release-docker-helm-config
         env:
           GITHUB_TOKEN: ${{ secrets.token }}
+          CHART_PATH: ${{ inputs.chart_path }}
+          CR_CONFIG_PATH: ${{ inputs.cr_config_path }}
 
   docker_release:
     name: Docker release

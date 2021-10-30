@@ -84,7 +84,7 @@ jobs:
         id: semantic
         with:
           extra_plugins: |
-            @stenic/semantic-release-docker-helm-config@1.0.1
+            @stenic/semantic-release-docker-helm-config@1.0.2
           extends: |
             @stenic/semantic-release-docker-helm-config
         env:

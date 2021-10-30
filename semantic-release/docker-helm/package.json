@@ -1,6 +1,6 @@
 {
   "name": "@stenic/semantic-release-docker-helm-config",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "semantic-release shareable config for docker + helm.",
   "main": ".releaserc.json",
   "files": [

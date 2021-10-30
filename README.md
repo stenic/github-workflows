@@ -24,6 +24,8 @@ jobs:
     uses: stenic/github-workflows/.github/workflows/release-docker-helm.yaml@main
     with:
       docker_image: "ghcr.io/${{ github.repository }}"
+      chart_path: './charts/test'
+      cr_config_path: './.github/ct.yaml'
     secrets:
       token: ${{ secrets.GH_TOKEN }}
 ```
